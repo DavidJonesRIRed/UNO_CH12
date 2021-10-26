@@ -13,6 +13,6 @@ public class Main {
         deck.shuffle();
         Hand myHand = new Hand();
         myHand.addCard(deck.draw());
-        myHand.displayHand();
+        System.out.println(myHand.displayHand());
     }
 }

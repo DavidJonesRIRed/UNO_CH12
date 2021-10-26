@@ -19,7 +19,7 @@ public class Hand {
             output.append(card.display()).append(" ");
         }
 
-        return output.toString().trim();
+        return output.toString();
 
     }
 }

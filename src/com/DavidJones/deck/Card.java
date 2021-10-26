@@ -21,7 +21,7 @@ public class Card {
             case 14 -> output = "Wild draw 4";
             default -> output = value < 10 ? Integer.toString(value) : " " + value;
         }
-        return output + color;
+        return output + " " + color;
     }
 
 }
