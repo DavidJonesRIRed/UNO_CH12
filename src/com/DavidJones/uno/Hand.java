@@ -7,6 +7,11 @@ import java.util.List;
 
 public class Hand {
     private List<Card> cards = new ArrayList<>();
+    private Actor holder;
+
+    public Hand(Actor holder){
+        this.holder = holder;
+    }
 
     public void addCard(Card card){
         cards.add(card);
@@ -21,5 +26,9 @@ public class Hand {
 
         return output.toString();
 
+    }
+
+    public int size(){
+        return cards.size();
     }
 }
